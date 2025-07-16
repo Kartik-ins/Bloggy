@@ -34,7 +34,7 @@ app.use('/api/blog-like', BlogLikeRoute)
 
 
 
-mongoose.connect(process.env.MONGODB_CONN, { dbName: 'yt-mern-blog' })
+mongoose.connect(process.env.MONGODB_CONN, { dbName: 'bloggy' })
     .then(() => console.log('Database connected.'))
     .catch(err => console.log('Database connection failed.', err))
 
