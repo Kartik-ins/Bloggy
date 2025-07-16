@@ -1,0 +1,44 @@
+.main-container {
+  background: hsl(var(--card));
+  border-radius: 1rem;
+  box-shadow: 0 2px 16px 0 rgba(0,0,0,0.12);
+  padding: 1.5rem;
+}
+.editor-container {
+  background: hsl(var(--popover));
+  border-radius: 0.75rem;
+  border: 1px solid hsl(var(--border));
+  color: hsl(var(--foreground));
+  transition: background 0.3s, color 0.3s;
+}
+.editor-container__editor {
+  background: transparent;
+  color: inherit;
+}
+.editor_container__word-count {
+  color: hsl(var(--muted-foreground));
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+}
+.ck.ck-editor__main, .ck.ck-content {
+  background: transparent !important;
+  color: hsl(var(--foreground)) !important;
+}
+.ck.ck-toolbar {
+  background: hsl(var(--card)) !important;
+  border-radius: 0.75rem 0.75rem 0 0;
+  border: 1px solid hsl(var(--border));
+}
+.ck.ck-toolbar .ck.ck-toolbar__separator {
+  background: hsl(var(--border));
+}
+.ck.ck-button {
+  color: hsl(var(--foreground));
+}
+.ck.ck-button.ck-on, .ck.ck-button:active {
+  background: hsl(var(--muted));
+}
+.ck.ck-dropdown__panel {
+  background: hsl(var(--popover));
+  color: hsl(var(--foreground));
+}

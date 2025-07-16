@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 12%; /* #1a1a1a */
+    --foreground: 0 0% 95%; /* #f3f3f3 */
+    --card: 0 0% 16%; /* #232323 */
+    --card-foreground: 0 0% 95%;
+    --popover: 0 0% 16%;
+    --popover-foreground: 0 0% 95%;
+    --primary: 145 63% 49%; /* #10a37f (ChatGPT green) */
+    --primary-foreground: 0 0% 100%;
+    --secondary: 0 0% 20%;
+    --secondary-foreground: 0 0% 95%;
+    --muted: 0 0% 24%;
+    --muted-foreground: 0 0% 60%;
+    --accent: 145 63% 49%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 145 63% 49%;
+    --radius: 0.75rem;
+    --chart-1: 145 63% 49%;
+    --chart-2: 0 0% 24%;
+    --chart-3: 0 0% 16%;
+    --chart-4: 0 0% 12%;
+    --chart-5: 0 0% 8%;
+    --sidebar-background: 0 0% 16%;
+    --sidebar-foreground: 0 0% 95%;
+    --sidebar-primary: 145 63% 49%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 0 0% 24%;
+    --sidebar-accent-foreground: 0 0% 95%;
+    --sidebar-border: 0 0% 20%;
+    --sidebar-ring: 145 63% 49%;
+  }
+  .dark {
+    --background: 0 0% 12%;
+    --foreground: 0 0% 95%;
+    --card: 0 0% 16%;
+    --card-foreground: 0 0% 95%;
+    --popover: 0 0% 16%;
+    --popover-foreground: 0 0% 95%;
+    --primary: 145 63% 49%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 0 0% 20%;
+    --secondary-foreground: 0 0% 95%;
+    --muted: 0 0% 24%;
+    --muted-foreground: 0 0% 60%;
+    --accent: 145 63% 49%;
+    --accent-foreground: 0 0% 100%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 0 0% 20%;
+    --input: 0 0% 20%;
+    --ring: 145 63% 49%;
+    --radius: 0.75rem;
+    --chart-1: 145 63% 49%;
+    --chart-2: 0 0% 24%;
+    --chart-3: 0 0% 16%;
+    --chart-4: 0 0% 12%;
+    --chart-5: 0 0% 8%;
+    --sidebar-background: 0 0% 16%;
+    --sidebar-foreground: 0 0% 95%;
+    --sidebar-primary: 145 63% 49%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 0 0% 24%;
+    --sidebar-accent-foreground: 0 0% 95%;
+    --sidebar-border: 0 0% 20%;
+    --sidebar-ring: 145 63% 49%;
+  }
+  html {
+    font-family: 'Inter', system-ui, sans-serif;
+    background-color: hsl(var(--background));
+    color: hsl(var(--foreground));
+    scroll-behavior: smooth;
+    transition: background 0.3s, color 0.3s;
+  }
+  body {
+    min-height: 100vh;
+    background: inherit;
+    color: inherit;
+    font-feature-settings: "cv02","cv03","cv04","cv11";
+    letter-spacing: 0.01em;
+    transition: background 0.3s, color 0.3s;
+  }
+  ::selection {
+    background: hsl(var(--primary) / 0.15);
+  }
+}
